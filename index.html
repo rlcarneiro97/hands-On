@@ -55,6 +55,30 @@
       </tbody>
     </table>
 
+    <dialog>
+      <header>
+        <h3>Novo aluno</h3>
+      </header>
+      <form method="post">
+        <fieldset>
+          <label for="nome">Nome</label>
+          <input type="text" placeholder="Nome do aluno..." name="nome" id="nome"/>
+          <label for="matricula">Matrícula</label>
+          <input type="number" placeholder="Matricula..." name="matricula" id="matricula"/>
+          <label for="curso">Curso</label>
+          <select name="" id="">
+            <option>Selecione</option>
+            <option value="Sistemas para internet">Sistemas para internet</option>
+            <option value="Redes">Redes</option>
+          </select>
+        </fieldset>
+        <div>
+          <button type="reset">Cancelar</button>
+          <button type="submit">Criar</button>
+        </div>
+      </form>
+    </dialog>
+
     <section>
       <header>
         <h1>Disciplina</h1>
