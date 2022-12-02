@@ -31,7 +31,7 @@
     <section class="section-wrapper">
       <header class="section-header">
         <h1 class="section-header__title">Alunos</h1>
-        <button class="button button--success">Novo Aluno</button>
+        <button class="button button--success" id="modal" onclick="abrirModal()">Novo Aluno</button>
       </header>
     </section>
     <div class="table-container">
@@ -68,15 +68,15 @@
     </div>
 
     <dialog>
-      <header>
-        <h3>Novo aluno</h3>
+      <header class="section-header">
+        <h3 class="section-header__title">Novo aluno</h3>
       </header>
       <form method="post">
         <fieldset>
           <label for="nome">Nome</label>
-          <input type="text" placeholder="Nome do aluno..." name="nome" id="nome"/>
+          <input type="text" placeholder="Nome do aluno..." name="nome" id="nome" class="input"/>
           <label for="matricula">Matrícula</label>
-          <input type="number" placeholder="Matricula..." name="matricula" id="matricula"/>
+          <input type="number" placeholder="Matricula..." name="matricula" id="matricula" class="input"/>
           <label for="curso">Curso</label>
           <select name="" id="">
             <option>Selecione</option>
@@ -84,9 +84,9 @@
             <option value="Redes">Redes</option>
           </select>
         </fieldset>
-        <div>
-          <button type="reset">Cancelar</button>
-          <button type="submit">Criar</button>
+        <div class="">
+          <button type="reset" id="reset" onclick="fecharModal()" class="button button--danger">Cancelar</button>
+          <button type="submit" id="submit" onclick="fecharModal()" class="button button--success">Criar</button>
         </div>
       </form>
     </dialog>
@@ -145,5 +145,6 @@
   <footer class="footer">
     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit!!</span>
   </footer>
+  <script src="./js/util.js"></script>
 </body>
 </html>
