@@ -11,49 +11,61 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/all.css" />
   </head>
-  <header>
+  <body>
+  <header class="header">
     <figure>
-      <img src="./assets/cse-marcas-unipe_50anos_va1.svg" alt="Sistema de controle Acadêmico"/>
+      <img src="./assets/cse-marcas-unipe_50anos_va1.svg" alt="Sistema de controle Acadêmico" class="header__logo"/>
     </figure>
-    <nav>
-      <a href="#" title="Página principal">Principal</a>
-      <a href="#" title="Alunos">Alunos</a>
-      <a href="#" title="Disciplina">Disciplina</a>
-      <a href="#" title="Sair" onclick="">Sair</a>
+    <nav class="nav-header">
+      <a href="#" title="Página principal" class="nav-header__link">Principal</a>
+      <a href="#" title="Alunos" class="nav-header__link">Alunos</a>
+      <a href="#" title="Disciplina" class="nav-header__link">Disciplina</a>
+      <a href="#" title="Sair" onclick="" class="button button--danger">Sair</a>
     </nav>
   </header>
   <main>
-    <section>
-      <header>
-        <h1>Alunos</h1>
-        <button>Novo Aluno</button>
+    <section class="section-wrapper">
+      <header class="section-header">
+        <h1 class="section-header__title">Alunos</h1>
+        <button class="button button--success">Novo Aluno</button>
       </header>
     </section>
-    <table>
-      <thead>
-        <tr>
-          <th>Nome</th>
-          <th>Matrícula</th>
-          <th>Cursos</th>
-          <th>Ações</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Ronan</td>
-          <td>001</td>
-          <td>Sistemas para internet</td>
-          <td><button>Editar</button></td>
-        </tr>
-        <tr>
-          <td>Adalberto</td>
-          <td>002</td>
-          <td>Sistemas para internet</td>
-          <td><button>Editar</button></td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-container">
+      <table class="table table--stripe">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Matrícula</th>
+            <th>Cursos</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ronan</td>
+            <td>001</td>
+            <td>Sistemas para internet</td>
+            <td><button class="button button--success">Editar</button></td>
+          </tr>
+          <tr>
+            <td>Adalberto</td>
+            <td>002</td>
+            <td>Sistemas para internet</td>
+            <td><button class="button button--success">Editar</button></td>
+          </tr>
+          <tr>
+            <td>Ronaldo</td>
+            <td>003</td>
+            <td>Sistemas para internet</td>
+            <td><button class="button button--success">Editar</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
     <dialog>
       <header>
@@ -79,24 +91,59 @@
       </form>
     </dialog>
 
-    <section>
-      <header>
-        <h1>Disciplina</h1>
+    <section class="section-wrapper">
+      <header class="section-header">
+        <h1 class="section-header__title">Disciplina</h1>
       </header>
-      <div>
-        <h3>Nome da disciplina</h3>
-        <ul>
-          <li>Carga horária: 16h</li>
-          <li>Professor: pessoa da Silva</li>
-          <li>Status: <span>em aberto</span></li>
-        </ul>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="subject-list">
+        <div class="subject-card">
+          <h3 class="subject-card__title">Nome da disciplina</h3>
+          <hr/>
+          <ul class="subject-card__list">
+            <li>Carga horária: 16h</li>
+            <li>Professor: pessoa da Silva</li>
+            <li>Status <span class="tag tag--success">em aberto</span></li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="subject-card">
+          <h3 class="subject-card__title">Nome da disciplina</h3>
+          <hr/>
+          <ul class="subject-card__list">
+            <li>Carga horária: 16h</li>
+            <li>Professor: pessoa da Silva</li>
+            <li>Status <span class="tag tag--success">em aberto</span></li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="subject-card">
+          <h3 class="subject-card__title">Nome da disciplina</h3>
+          <hr/>
+          <ul class="subject-card__list">
+            <li>Carga horária: 16h</li>
+            <li>Professor: pessoa da Silva</li>
+            <li>Status <span class="tag tag--success">em aberto</span></li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="subject-card">
+          <h3 class="subject-card__title">Nome da disciplina</h3>
+          <hr/>
+          <ul class="subject-card__list">
+            <li>Carga horária: 16h</li>
+            <li>Professor: pessoa da Silva</li>
+            <li>Status <span class="tag tag--success">em aberto</span></li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit!!</span>
   </footer>
-  <body>
-  </body>
+</body>
 </html>
