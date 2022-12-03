@@ -1,5 +1,27 @@
 .input{
     font-family: "Poppins", sans-serif;
-    padding-right: 86%;
-    /* padding-bottom: 1%; */
+    display: flex;
+    justify-content: center;
+    width: 99%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.options__container{
+    display: flex;
+    justify-content: right;
+    margin-top: 1%;
+    padding-right: 1%;
+}
+
+.button__container{
+    margin-left: 1%;
+}
+
+.input__title{
+    margin: auto;
+    font-size: 1em;
 }

@@ -69,7 +69,7 @@
 
     <dialog>
       <header class="section-header">
-        <h3 class="section-header__title">Novo aluno</h3>
+        <h3 class="input__title">Novo aluno</h3>
       </header>
       <form method="post">
         <fieldset>
@@ -78,15 +78,19 @@
           <label for="matricula">Matrícula</label>
           <input type="number" placeholder="Matricula..." name="matricula" id="matricula" class="input"/>
           <label for="curso">Curso</label>
-          <select name="" id="">
+          <select name="" id="" class="input">
             <option>Selecione</option>
             <option value="Sistemas para internet">Sistemas para internet</option>
             <option value="Redes">Redes</option>
           </select>
         </fieldset>
-        <div class="">
-          <button type="reset" id="reset" onclick="fecharModal()" class="button button--danger">Cancelar</button>
-          <button type="submit" id="submit" onclick="fecharModal()" class="button button--success">Criar</button>
+        <div class="options__container">
+          <div class="button__container">
+            <button type="reset" id="reset" onclick="fecharModal()" class="button button--danger">Cancelar</button>
+          </div>
+          <div class="button__container">
+            <button type="submit" id="submit" onclick="fecharModal()" class="button button--success">Criar</button>
+          </div>
         </div>
       </form>
     </dialog>

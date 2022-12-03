@@ -1,0 +1,70 @@
+{
+  "alunos": [
+    {
+      "nome": "Laura Eliane Evelyn Gonçalves",
+      "matricula": "001",
+      "curso": "Sistemas para internet",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "nome": "Murilo Victor Bento Dias",
+      "matricula": "002",
+      "curso": "Redes"
+    },
+    {
+      "id": 3,
+      "nome": "Patrícia Marcela Sara Novaes",
+      "matricula": "003",
+      "curso": "Sistemas para internet"
+    },
+    {
+      "nome": "Rafael de Lima Carneiro",
+      "matricula": "128",
+      "curso": "Ciência da Computação",
+      "id": 4
+    }
+  ],
+  "disciplinas": [
+    {
+      "id": 1,
+      "nome": "Introdução a progração com scripts",
+      "cargaHoraria": "36h",
+      "professor": "Tiago Daniel Fernando Baptista",
+      "status": "Obrigatória",
+      "observacos": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+      "id": 2,
+      "nome": "Fundamentos da Computação",
+      "cargaHoraria": "60h",
+      "professor": "Marcela Vera Mendes",
+      "status": "Obrigatória",
+      "observacos": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+      "id": 2,
+      "nome": "Linguagens de Marcação",
+      "cargaHoraria": "67h",
+      "professor": "Marcela Vera Mendes",
+      "status": "Obrigatória",
+      "observacos": "Lorem ipsum dolor sit amet consectetur adipisicing."
+    },
+    {
+      "id": 3,
+      "nome": "Português Instrumental",
+      "cargaHoraria": "50h",
+      "professor": "Maitê Analu Carolina Aragão",
+      "status": "Opcional",
+      "observacos": "Lorem ipsum dolor sit adipisicing elit."
+    },
+    {
+      "nome": "Micro Front-End",
+      "cargaHoraria": "30h",
+      "professor": "Rafael de Lima Carneiro",
+      "status": "Obrigatória",
+      "observacos": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "id": 4
+    }
+  ]
+}
