@@ -90,7 +90,7 @@ const createStudent = () => {
     matricula.value = data.matricula
     selectCurso.value =  data.curso
   })
-  saveStundentData(url,  'PUT');
+  saveStundentData(url, 'PUT');
  };
 
 /**
@@ -166,7 +166,7 @@ const createSubject = () => {
 }
 
 /**
- * Função responsável abrir o modal de edição e carregar os dados de um estudante e salvar os dados da edição
+ * Função responsável abrir o modal de edição e carregar os dados de uma disciplina e salvar os dados da edição
  * @param {subjectId} string
  */
 const editdSubjectModal = async (subjectId)  => {
@@ -174,23 +174,27 @@ const editdSubjectModal = async (subjectId)  => {
   openSubjectModal();
   subjectModalTitle.textContent='Editar disciplina';
   saveSubjectButton.textContent = 'Editar';
-  const [name, cargaHoraria, professor, observacos] = document.querySelectorAll('input');
+  const form = document.querySelectorAll('#subject-form input');
   const selectStatus = document.querySelector("#status");
+  const selectTextarea = document.querySelector("#observacos")
 
   fetch(url)
   .then(resp => resp.json())
   .then(data => {
-    name.value = data.nome
-    cargaHoraria.value = data.cargaHoraria
-    professor.value = data.professor
+
+    form[0].value = data.nome
+    form[1].value = data.cargaHoraria
+    form[2].value = data.professor
     selectStatus.value = data.status
-    observacos.value = data.value
+    selectTextarea.value = data.observacos
+    
   })
+
   saveSubjectData(url, 'PUT');
  };
 
  /**
- * Função responsável por apagar dados de um estutande
+ * Função responsável por apagar dados de uma disciplina
  * @param {subjectId} string
  */
 const deleteSubject = async (subjectId)  =>  
