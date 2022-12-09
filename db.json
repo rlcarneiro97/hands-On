@@ -1,27 +1,15 @@
 {
   "alunos": [
     {
-      "nome": "Laura Eliane Evelyn Gonçalves",
-      "matricula": "001",
-      "curso": "Sistemas para internet",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "nome": "Murilo Victor Bento Dias",
-      "matricula": "002",
-      "curso": "Redes"
-    },
-    {
-      "id": 3,
       "nome": "Patrícia Marcela Sara Novaes",
       "matricula": "003",
-      "curso": "Sistemas para internet"
+      "curso": "Sistemas para internet",
+      "id": 3
     },
     {
-      "nome": "Rafael de Lima Carneiro",
-      "matricula": "128",
-      "curso": "Ciência da Computação",
+      "nome": "Rafael Carneiro",
+      "matricula": "1510007147",
+      "curso": "Sistemas para internet",
       "id": 4
     }
   ],
@@ -65,6 +53,22 @@
       "status": "Obrigatória",
       "observacos": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "id": 4
+    },
+    {
+      "nome": "Compiladores",
+      "cargaHoraria": "36h",
+      "professor": "Carlos Eduardo",
+      "status": "Obrigatória",
+      "observacos": "Um compilador é um tradutor de linguagens de programação casuais para linguagens de programação do nível da máquina. Isso é, um programa que a partir do código de uma linguagem qualquer, realiza algumas etapas como a validação e, por fim, gera um ou mais arquivo(s) que na maioria das vezes é binário.",
+      "id": 5
+    },
+    {
+      "nome": "Português",
+      "cargaHoraria": "36h",
+      "professor": "Tomas Turbando de Oliveira",
+      "status": "Opcional",
+      "observacos": "\"O Português é uma língua originada no galego-português, idioma falado no Reino da Galiza e no norte de Portugal. No período das Grandes Navegações, a língua foi difundida nas terras conquistadas, como Brasil, África e outras partes do mundo.\"",
+      "id": 6
     }
   ]
 }
