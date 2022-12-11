@@ -97,3 +97,7 @@ json-server --watch db.json
 | **POST** | /disciplinas | Salva uma disciplinas na base de dados
 | **PUT** | /disciplinas/1 | Atualiza os dados de uma disciplinas
 | **DELETE** | /disciplinas/1 | Remove uma disciplinas
+
+#### HTTP Server
+
+Iniciar um servidor HTTP e abrir no http://127.0.0.1:5500, utilizei e recomendo o uso da extensão *Live Server* do VS Code para isso.
