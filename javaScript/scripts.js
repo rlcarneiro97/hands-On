@@ -174,7 +174,7 @@ const editdSubjectModal = async (subjectId)  => {
   openSubjectModal();
   subjectModalTitle.textContent='Editar disciplina';
   saveSubjectButton.textContent = 'Editar';
-  const form = document.querySelectorAll('#subject-form input');
+  const [nome, cargaHoraria, professor] = document.querySelectorAll('#subject-form input');
   const selectStatus = document.querySelector("#status");
   const selectTextarea = document.querySelector("#observacos")
 
@@ -182,9 +182,9 @@ const editdSubjectModal = async (subjectId)  => {
   .then(resp => resp.json())
   .then(data => {
 
-    form[0].value = data.nome
-    form[1].value = data.cargaHoraria
-    form[2].value = data.professor
+    nome.value = data.nome
+    cargaHoraria.value = data.cargaHoraria
+    professor.value = data.professor
     selectStatus.value = data.status
     selectTextarea.value = data.observacos
     
@@ -220,7 +220,7 @@ const createSubjectSection = (nome, cargaHoraria, professor, status, observacos,
       <hr />
       <ul class="subject-card__list">
         <li>carga horária: ${cargaHoraria}</li>
-        <li>Professor: ${status}</li>
+        <li>Professor: ${professor}</li>
         <li>Status <span class="tag tag--danger">${status}</span></li>
         </ul>
         <p>${observacos}</p>
@@ -238,7 +238,7 @@ const createSubjectSection = (nome, cargaHoraria, professor, status, observacos,
       <hr />
       <ul class="subject-card__list">
         <li>carga horária: ${cargaHoraria}</li>
-        <li>Professor: ${status}</li>
+        <li>Professor: ${professor}</li>
         <li>Status <span class="tag tag--success">Opcional</span></li>
         </ul>
         <p>${observacos}</p>

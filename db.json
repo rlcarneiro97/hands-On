@@ -5,6 +5,12 @@
       "matricula": "003",
       "curso": "Sistemas para internet",
       "id": 3
+    },
+    {
+      "nome": "Israel Dionísio",
+      "matricula": "4606752896",
+      "curso": "Sistemas para internet",
+      "id": 4
     }
   ],
   "disciplinas": [
@@ -39,6 +45,14 @@
       "professor": "Maitê Analu Carolina Aragão",
       "status": "Opcional",
       "observacos": "Lorem ipsum dolor sit adipisicing elit."
+    },
+    {
+      "nome": "Compiladores",
+      "cargaHoraria": "60h",
+      "professor": "Thiago Rodrigues",
+      "status": "Obrigatória",
+      "observacos": "0948564896572-2432",
+      "id": 5
     }
   ]
 }
